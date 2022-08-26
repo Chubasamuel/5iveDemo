@@ -9,6 +9,9 @@ const getAudioDOM=()=>{
 const getProgressDOM=()=>{
     return document.querySelector("#progress_circle");
 }
+const getProgressBlurDOM=()=>{
+return document.querySelector("#progress_blur");
+}
 const startPlaying=(audioDom)=>{
 audioDom.play();
 audioPlaying=true;
@@ -28,12 +31,14 @@ const canPlayAudio=()=>{
 
 const startTrackingProgress=(audioDom)=>{
     let progressDom=getProgressDOM();
+	let progBlurDom=getProgressBlurDOM();
     let total=audioDom.duration;
     const setProgress=()=>{
         let played=audioDom.currentTime/total;
-        let converted=played*60;
-        progressDom.style.left=converted+"%";
-        console.log({c:converted,d:diff})
+        let converted=(played*75)+"%";
+	    let conv2=(played*100)+"%";
+        progressDom.style.left=converted;
+        progBlurDom.style.width=conv2;
     }
     progressEvent=setInterval(setProgress,progressTrackRate);
 }

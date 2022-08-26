@@ -151,15 +151,23 @@ h3 {
   margin-top:15px;
 }
 .progress_main{
-  position:relative;
+  position:absolute;
   margin-top: 25px;
+  width:80%;
 }
 .progress_bar{
   background-color: #ffffff;
-  width:250px;
+  width:80%;
   height:4px;
   display:block;
   border-radius:50px ;
+}
+.progress_blur{
+background-color:#4b4c51;
+width:0%;
+height:4px;
+display:block;
+border-radius:50px;
 }
 .progress_circle{
   display:block;
