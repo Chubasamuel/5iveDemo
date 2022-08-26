@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5ive - A demo page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <img class="blob" src="images/right-blob.svg" alt="" />
+    <div class="five"></div>
+    <img class="lil5ive" src="images/lil5ive.png" alt="" />
+    <img class="angles" src="images/angles.svg" alt="" />
+    <main>
+      <aside class="sidebar">
+        <div class="social-icon">
+          <img src="images/twitter-icon.svg" alt="twitter-icon" />
+        </div>
+        <div class="social-icon">
+          <img src="images/facebook-icon.svg" alt="facebook-icon" />
+        </div>
+        <div class="social-icon">
+          <img src="images/instagram-icon.svg" alt="instagram-icon" />
+        </div>
+        <div class="social-icon">
+          <img src="images/youtube-icon.svg" alt="twitter" />
+        </div>
+      </aside>
+      <section>
+        <nav>
+          <img src="images/logo.svg" alt="5ive" />
+          <div class="sidebar-nav">
+            <img src="images/search.svg" alt="search" />
+            <img src="images/hamburger.svg" alt="search" />
+          </div>
+        </nav>
+        <div class="content">
+          <h3>NEW SINGLE</h3>
+          <p>OUT NOW ON ALL PLATFORMS</p>
+          <div class="play_button">
+            <img src="images/play-button.svg" onclick="canPlayAudio()"/>
+          </div>
+          <audio id="audio" class="audio">
+                    <source src="audio/Sia_-_Angel_By_The_Wings.mp3" type="audio/mp3">
+                </audio>
+        <div class="progress_main">
+          <span class="progress_bar"></span>
+        <span class="progress_circle" id="progress_circle"></span>
+        </div>        
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
